@@ -1,0 +1,37 @@
+//Code here
+import java.util.Scanner;
+public class Basicmath
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c;
+        switch(s)
+        {
+            case "+":
+                c=a+b;
+                System.out.println(c);
+                break;
+             case "-":
+                c=a-b;
+                System.out.println(c);
+                break;
+             case "*":
+                c=a*b;
+                System.out.println(c);
+                break;
+             case "/":
+                c=a/b;
+                System.out.println(c);
+                break;
+             case "%":
+                c=a%b;
+                System.out.println(c);
+                break;
+        }
+    }
+    
+}

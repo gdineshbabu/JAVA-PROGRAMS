@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class InputOutput4
+{
+    public static void main(String args[])
+    {
+        Scanner a=new Scanner(System.in);
+        String l;
+        l=a.nextLine();//Programmer
+        System.out.print(l);//Programmer
+    }
+}

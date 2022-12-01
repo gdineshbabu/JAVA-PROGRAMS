@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Stu
+{
+  public static int stu(int b,int c)
+  {
+    System.out.println("Subject 1:"+b);
+    System.out.println("Subject 2:"+c);
+    int d=b+c;
+    return d;
+  }
+}
+
+public class Student extends Stu
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+         
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    System.out.println("Roll Number Is:"+a);
+  
+    System.out.println("Total:"+stu(b,c));
+    }
+}

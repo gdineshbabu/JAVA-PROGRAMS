@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Type
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        int i,even=0,odd=0;
+        for (i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+         for (i=0;i<n;i++)
+         {
+             if(a[i]%2==0)
+             {
+                 even=even+1;
+             }
+             else
+             {
+                 odd=odd+1;
+             }
+         }
+         if(even==n)
+         {
+             System.out.println("Even");
+             
+         }
+         else if(odd==n)
+         {
+             System.out.println("Odd");
+         }
+         else
+         {
+             System.out.println("Mixed");
+         }
+    }
+}

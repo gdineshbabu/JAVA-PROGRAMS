@@ -1,0 +1,16 @@
+//Code here
+import java.util.Scanner;
+public class Play
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        float e=(int)(Math.sqrt((a-c)*(a-c)+(b-d)*(b-d)));
+        System.out.println(e);
+    }
+}

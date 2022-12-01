@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Discount
+{
+	public static void main(String[] args)
+	{
+    double  dis,amount,markedprice;
+    Scanner sc= new Scanner(System.in);
+    markedprice= sc.nextDouble();    
+    dis= sc.nextDouble();
+	amount= calcuateDiscount(markedprice,dis);
+	System.out.println(amount); 
+	}
+
+static double calcuateDiscount(double markedprice,double dis)
+          {      
+              double total=(markedprice*dis)/100;
+              double cost=markedprice-total;
+              return cost;
+              
+    
+              
+          }
+         
+}

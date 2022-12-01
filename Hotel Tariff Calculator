@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Hotel
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        float r=sc.nextFloat();
+        int d=sc.nextInt();
+        float t=r*d;
+        float h=(r/5)*d+(r*d);
+        if((m==1) ||(m==2) ||(m==3) ||(m==7)||(m==8)||(m==9)||(m==10))
+        System.out.printf("Hotel Tariff: Rs.%1.2f",t);
+        else if((m==4)||(m==5)||(m==6)||(m==11)||(m==12))
+         System.out.printf("Hotel Tariff: Rs.%1.2f",h);
+         else
+         System.out.println("Invalid Input");
+    }
+}

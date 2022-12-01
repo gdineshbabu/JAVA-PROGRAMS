@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Series7
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i;
+        int s=1;
+        float s1=2;
+        System.out.print(s+" ");
+        System.out.printf("%.1f ",s1);
+        float b=(int)s;
+        
+        for(i=3;i<=n;i++)
+        {
+           if(i%2==1)
+           {
+               b=(b*3);
+               System.out.printf("%.1f ",b);
+           }
+           else
+           {
+               s1=s1*3;
+               System.out.printf(" %.1f ",s1);
+           }
+
+        }
+        
+    }
+}

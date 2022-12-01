@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Profit
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        Dinesh d=new Dinesh();
+        float X=sc.nextFloat();
+        int Y=sc.nextInt();
+       d.din(X,Y);
+    }
+}
+class Dinesh
+{
+    public static void din(float X,int Y)
+    {
+         float pl=X/12;
+        float l=X-(12*Y);
+        float p=12*Y-X;
+         System.out.println("Enter the price of a dozen mangoes");
+        System.out.println("Enter the price at which 1 mango is being sold");
+        if(pl>Y)
+       
+        System.out.printf("Loss :Rs.%1.2f",l);
+        else if(pl<Y)
+        
+        System.out.printf("Profit:Rs.%1.2f",p);
+
+        else
+          {
+              if(pl==Y)
+              
+              System.out.println("No profit nor loss");
+          }
+    }
+}

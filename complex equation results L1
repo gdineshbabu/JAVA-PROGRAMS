@@ -1,0 +1,18 @@
+//Code here
+import java.util.Scanner;
+public class complexequation
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int C=50,H=30;
+        int D=sc.nextInt();
+        int E=sc.nextInt();
+        int F=sc.nextInt();
+        int Q=(int)(Math.sqrt((2*C*D)/H));
+        int R=(int)(Math.sqrt((2*C*E)/H));
+        int S=(int)(Math.sqrt((2*C*F)/H));
+        System.out.print(Q+" "+R+" "+S);
+        
+    }
+}

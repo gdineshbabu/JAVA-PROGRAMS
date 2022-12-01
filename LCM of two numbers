@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Lcm
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+         int b=sc.nextInt();
+         int max=a>b?a:b;
+         while(true)
+         {
+             if(max%a==0 && max%b==0)
+             {
+                 System.out.printf("LCM of %d and %d is %d",a,b,max);
+                 break;
+             }
+             ++max;
+         
+         }
+           
+    }
+}

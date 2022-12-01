@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Sum
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        Digit d=new Digit();
+        
+        int n=sc.nextInt();
+        d.Dig(n);
+      
+         System.out.println(d.Dig(n));
+    }
+}
+class Digit
+{
+    public static int Dig(int n)
+  {
+    int sum=0,digit;
+        while(n>0)
+        {
+            digit=n%10;
+            sum=sum+digit;
+            n=n/10;
+           
+        }
+        
+         return sum;
+    }
+}

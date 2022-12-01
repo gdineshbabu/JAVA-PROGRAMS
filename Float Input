@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class InputOutput2
+{
+    public static void main(String args[])
+    {
+       Scanner s=new Scanner(System.in);
+       float b;
+       b=s.nextFloat();//56.2425
+       System.out.printf("%1.2f",b);//56.24
+       
+    }
+}

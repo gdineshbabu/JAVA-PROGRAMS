@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class SumDiff
+{
+    public static void main(String args[])
+    {
+     Scanner sc=new Scanner(System.in);
+     Dinesh d=new Dinesh();
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     d.din(a,b);
+     
+    }
+}
+class Dinesh
+{
+    public static void din(int a,int b)
+    {
+    
+        System.out.println(a+b);
+     System.out.println(a-b);
+
+    }
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Series2
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int s,f=6,a=5;
+        System.out.print(f+" ");
+        for(int i=1;i<=n-1;i++)
+        {
+           f=f+a;
+          System.out.print(f+" ");
+          a=a+5;
+        }
+    }
+}

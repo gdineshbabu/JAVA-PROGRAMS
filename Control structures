@@ -1,0 +1,17 @@
+//code here
+import java.util.Scanner;
+public class Assessment1
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int n=(75*b)+(50*c);
+        if(n<=a)
+        System.out.println("Boat is Stable");
+        else
+        System.out.println("Boat is unstable");
+    }
+}

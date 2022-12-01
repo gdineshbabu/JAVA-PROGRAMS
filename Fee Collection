@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Fee
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+          String MSDS,MSH,MGSDS,MGSH;
+        float s,h,d,sh,fee,hfee,bus;
+        System.out.println("Enter the student type");
+        String Type=sc.nextLine();
+      
+        switch(Type)
+        {
+            case "MSDS":
+                  System.out.println("Enter tuition fee");
+                    fee=sc.nextFloat();
+                   System.out.println("Enter bus fee");
+                    bus=sc.nextFloat(); 
+                 s= fee+bus; 
+                  System.out.printf("The fees to be paid by the student is Rs.%1.2f",s);
+                  break;
+            case "MSH":
+                 System.out.println("Enter tuition fee");
+                  fee=sc.nextFloat();
+                System.out.println("Enter hostel fee");
+                 hfee=sc.nextFloat();
+                 h=fee+hfee;
+                 System.out.printf("The fees to be paid by the student is Rs.%1.2f",h);
+                 break;
+                 
+            case "MGSDS":
+                    System.out.println("Enter tuition fee");
+                    fee=sc.nextFloat();
+                     System.out.println("Enter bus fee");
+                     bus=sc.nextFloat();
+                 d=(150*fee)/100 + bus;
+                  System.out.printf("The fees to be paid by the student is Rs.%1.2f",d);
+                  break;
+            case "MGSH":
+                System.out.println("Enter tuition fee");
+                fee=sc.nextFloat();
+               System.out.println("Enter hostel fee");
+               hfee=sc.nextFloat();
+                 sh=(150*fee)/100 + hfee;
+                  System.out.printf("The fees to be paid by the student is Rs.%1.2f",sh);
+                  break;
+        }
+    }
+}

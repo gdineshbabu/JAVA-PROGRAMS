@@ -1,0 +1,19 @@
+//Code here
+import java.util.Scanner;
+class Furniture
+{
+	public static void main(String arg[])	
+	{
+	    Scanner sc=new Scanner(System.in);
+         long amount,deppercent,year,afterdep,temp;
+	  amount=sc.nextLong();
+	 deppercent=sc.nextLong();
+	 year=sc.nextLong();
+	 temp=amount;
+	 for(int i=0;i<year;i++)
+	 temp=((100-deppercent)*temp)/100;
+	 System.out.println(temp);
+	
+	    
+	}
+}

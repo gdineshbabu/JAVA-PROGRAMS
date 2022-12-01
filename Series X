@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Series10
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        double s=95.0;
+        
+        System.out.printf("%.1f ",s);
+        for(int i=1;i<=n-1;i++)
+        {
+           s=s+20.5;
+           System.out.printf("%.1f ",s);
+           s=s+2.0*i;
+        }
+
+
+    }
+}
